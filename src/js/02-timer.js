@@ -12,7 +12,7 @@ const secondsEl = document.querySelector('[data-seconds]');
 
 startBtn.disabled = true;
 let deltaTime;
-let intervalId;
+let intervalId = null;
 
 const options = {
     enableTime: true,
