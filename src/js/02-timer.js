@@ -12,13 +12,13 @@ const secondsEl = document.querySelector('[data-seconds]');
 
 startBtn.disabled = true;
 let deltaTime;
+let intervalId;
 
 const options = {
     enableTime: true,
     time_24hr: true,
     defaultDate: new Date(),
     minuteIncrement: 1,
-    intervalId: null,
 
     onClose(selectedDates) {
     console.log(selectedDates[0]);
