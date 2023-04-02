@@ -27,7 +27,7 @@ function handleFormSubmit(evt) {
   let stepValue = Number(step.value);
   let amountValue = Number(amount.value);
 
-  for (let i = 0; i <= amountValue; i++) {
+  for (let i = 1; i <= amountValue; i++) {
     let position = i + 1;
     const delays = delayValue + stepValue * i;
     createPromise(position, delays)
